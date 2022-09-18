@@ -1,0 +1,23 @@
+package recapArraysDemo;
+
+public class Main {
+    public static void main(String[] args) {
+
+        double[] myList = {1.2, 1.3, 4.5, 64.3};
+        double total = 0;
+        double max = myList[0];
+
+        for (double number : myList) {
+            if (max < number) {
+                max = number;
+            }
+            total = total + number;
+            System.out.println(number);
+        }
+
+        System.out.println("Sum of all : " + total);
+        System.out.println("Max number in array: " + max);
+
+
+    }
+}
